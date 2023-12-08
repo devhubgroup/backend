@@ -10,7 +10,7 @@ const Client = require('../../models/client');
 const GP = require('../../models/GP');
 const Verification = require("../../models/verificationModel");
 
-exports.register = async(req, res, next) => {
+exports.register = async(req, res) => {
   const errors = validationResult(req);
   if(!errors.isEmpty())
       return res.status(422).json(validation(errors.array()));
@@ -30,6 +30,7 @@ exports.register = async(req, res, next) => {
               prenom,
               nom,
               email,
+              adresse,
               telephone,
               role,
               password,
