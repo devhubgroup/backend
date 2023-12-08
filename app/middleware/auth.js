@@ -7,7 +7,6 @@ exports.registerValidation = [
     check("prenom","votre prenom est requis").not().isEmpty(),
     check("nom","votre nom est requis").not().isEmpty(),
     check("telephone","votre telephone est requis").not().isEmpty(),
-    check("adresse","votre adresse est requis").not().isEmpty(),
     check("email","votre email est requis").not().isEmpty(),
     check("password","votre mot de passe est requis").not().isEmpty(),
 ];
